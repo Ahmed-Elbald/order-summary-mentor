@@ -22,7 +22,7 @@ body {
 }
 
 .parent {
-  max-width: 375px;
+  width: 375px;
   background-image: url(../images/pattern-background-mobile.svg);
   background-color: #e0e8ff;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ body {
 }
 
 .card {
-  max-width: 311px;
+  width: 311px;
   border-radius: 20px;
   background-color: white;
   overflow: hidden;
