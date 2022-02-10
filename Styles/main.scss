@@ -1,0 +1,87 @@
+// Imprted files
+
+@use "../Styles/GMVL.scss" as *;
+
+/* Styling */
+body {
+  height: 100vh;
+}
+
+.parent {
+  max-width: 375px;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-color: $parent-bg-color;
+  background-repeat: no-repeat;
+  padding: 4em 2em;
+  @include position-centering;
+  @include min-mq(1440px) {
+    width: 1440px;
+    @include flex-centering;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position: 0 -130px;
+    padding: 6em;
+  }
+}
+.card {
+  max-width: 375px - 64px;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  .img-cont {
+    img {
+    width: 100%;
+    height: 8em;
+    }
+  }
+  .details-container {
+    @include flex-column-gap(1em);
+    padding: 1em;
+    text-align: center;
+    h2,
+    h4 {
+      color: $headers-color;
+    }
+    p,
+    button:last-child {
+      color: $par-color;
+      font-size: .9rem;
+    }
+    h2 {
+      font-weight: 900;
+    }
+    h4 {
+      font-weight: 700;
+      margin-bottom: .5em;
+    }
+    a {
+      font-weight: 700;
+      font-size: .8rem;
+      &:active {
+        text-decoration: none;
+        color: $active-color
+      }
+    }
+  }
+  .price-details {
+    @include grid-layout(25% 48% 25% , null, 1%);
+    align-items: center;
+    background-color: $price-bg-color;
+    border-radius: 10px;
+    padding: 1em;
+  }
+  button:first-of-type {
+    padding: .8em;
+    background-color: $buttons-bg-color;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    &:active {
+      background-color: $active-color
+    }
+  }
+  button:last-of-type {
+    background-color: transparent;
+    font-weight: 900;
+
+  }
+}
