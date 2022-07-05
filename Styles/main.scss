@@ -5,19 +5,14 @@
 /* Styling */
 body {
   height: 100vh;
-}
-
-.parent {
-  max-width: 375px;
   background-image: url(../images/pattern-background-mobile.svg);
   background-color: $parent-bg-color;
   background-repeat: no-repeat;
   padding: 4em 2em;
-  @include position-centering;
+  @include flex-centering;
 
-  @include min-mq(1440px) {
-    width: 1440px;
-    @include flex-centering;
+  @include min-mq(1200px) {
+
     background-image: url(../images/pattern-background-desktop.svg);
     background-position: 0 -130px;
     padding: 6em;
@@ -25,7 +20,7 @@ body {
 }
 
 .card {
-  max-width: 375px - 64px;
+  max-width: 375px;
   border-radius: 20px;
   background-color: white;
   overflow: hidden;

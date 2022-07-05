@@ -19,25 +19,16 @@ input[type=submit] {
 /* Styling */
 body {
   height: 100vh;
-}
-
-.parent {
-  max-width: 375px;
   background-image: url(../images/pattern-background-mobile.svg);
   background-color: #e0e8ff;
   background-repeat: no-repeat;
   padding: 4em 2em;
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@media (min-width: 1440px) {
-  .parent {
-    width: 1440px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 1200px) {
+  body {
     background-image: url(../images/pattern-background-desktop.svg);
     background-position: 0 -130px;
     padding: 6em;
@@ -45,7 +36,7 @@ body {
 }
 
 .card {
-  max-width: 311px;
+  max-width: 375px;
   border-radius: 20px;
   background-color: white;
   overflow: hidden;
