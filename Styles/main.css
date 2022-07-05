@@ -61,8 +61,11 @@ body {
   padding: 1em;
   text-align: center;
 }
-.card .details-container h2,
-.card .details-container h4 {
+.card .details-container h1 {
+  font-size: 1.4rem;
+}
+.card .details-container h1,
+.card .details-container span.dark {
   color: #1f2f56;
 }
 .card .details-container p,
