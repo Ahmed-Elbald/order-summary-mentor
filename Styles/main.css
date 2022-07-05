@@ -7,7 +7,7 @@
   outline: none;
   box-sizing: border-box;
   text-transform: capitalize;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 i,
@@ -22,7 +22,7 @@ body {
 }
 
 .parent {
-  width: 375px;
+  max-width: 375px;
   background-image: url(../images/pattern-background-mobile.svg);
   background-color: #e0e8ff;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ body {
 }
 
 .card {
-  width: 311px;
+  max-width: 311px;
   border-radius: 20px;
   background-color: white;
   overflow: hidden;
@@ -63,8 +63,8 @@ body {
 }
 .card .details-container h1 {
   font-size: 1.4rem;
+  color: #1f2f56;
 }
-.card .details-container h1,
 .card .details-container span.dark {
   color: #1f2f56;
 }

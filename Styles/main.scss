@@ -44,9 +44,9 @@ body {
 
     h1 {
       font-size: 1.4rem;
+      color: $headers-color;
     }
 
-    h1,
     span.dark {
       color: $headers-color;
     }
